@@ -22,12 +22,17 @@
 
   <main>
     <h2>お問い合わせ</h2>
-    <form action="https://formspree.io/f/あなたのフォームID" method="POST">
-      <label>お名前<br><input type="text" name="name" required></label><br>
-      <label>メールアドレス<br><input type="email" name="email" required></label><br>
-      <label>お問い合わせ内容<br><textarea name="message" rows="5" required></textarea></label><br>
-      <button type="submit">送信する</button>
-    </form>
+
+    <!-- ↓ ここから Google フォーム埋め込み ↓ -->
+    <div class="form-wrapper">
+      <!-- コピーした iframe をそのまま貼り付け -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjEivsjmsMVNbn--ndjD7j5NgUQyYM9Fu_oGIHO_wl0CgGXw/viewform?embedded=true" 
+    width="640" 
+    height="622" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0">読み込んでいます…
+</iframe>
   </main>
 
   <footer>
