@@ -1,28 +1,15 @@
 /* styles/style.css */
 
-:root :root {
-  --color-bg-hero: #E8A0BF;
-  --color-bg-accent: #A3E8DD;
-  --color-bg-footer: #F4F8D3; /* 省いてもOK */
-  --color-text: #333333;
-  --color-neutral-light: #f9f2f4;
-}
-body {
-  background: var(--color-neutral-light);
-  color: var(--color-text);
-}
-.hero {
-  background: var(--color-bg-hero);
-}
-.btn {
-  background: var(--color-bg-accent);
-}
-footer {
-  background: white; /* フッターは白でもOK */
+/* 1. カラーパレット */
+:root {
+  --color-primary:       #E8A0BF;  /* ヒーロー背景 / リンク */
+  --color-accent:        #A3E8DD;  /* ボタンアクセント */
+  --color-neutral-light: #F9F2F4;  /* ページ背景 */
+  --color-white:         #FFFFFF;  /* 白 */
+  --color-text:          #333333;  /* 本文テキスト */
 }
 
-
-/* 共通リセット & ベース */
+/* 2. リセット & ベース */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,7 +17,7 @@ footer {
 }
 body {
   font-family: sans-serif;
-  background-color: var(--color-bg-light);
+  background-color: var(--color-neutral-light);
   color: var(--color-text);
   line-height: 1.6;
   padding: 2rem;
@@ -43,7 +30,7 @@ a:hover {
   opacity: 0.8;
 }
 
-/* ヘッダー */
+/* 3. ヘッダー & ナビ */
 header {
   background-color: var(--color-white);
   padding: 1rem;
@@ -59,7 +46,7 @@ header nav a:hover {
   border-bottom: 2px solid var(--color-primary);
 }
 
-/* ヒーローセクション */
+/* 4. ヒーローセクション */
 .hero {
   text-align: center;
   padding: 4rem 1rem;
@@ -70,6 +57,11 @@ header nav a:hover {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+.hero p {
+  margin-bottom: 2rem;
+}
+
+/* 5. ボタン */
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -82,7 +74,7 @@ header nav a:hover {
   opacity: 0.9;
 }
 
-/* サービスリスト */
+/* 6. サービス一覧 */
 .service-list {
   list-style: none;
   padding: 0;
@@ -92,7 +84,7 @@ header nav a:hover {
   margin-bottom: 2rem;
 }
 
-/* フォーム */
+/* 7. フォーム & Google フォーム埋め込み */
 form input,
 form textarea {
   width: 100%;
@@ -109,8 +101,6 @@ form button {
   border: none;
   border-radius: 0.5rem;
 }
-
-/* Google フォーム埋め込み */
 .form-wrapper {
   max-width: 800px;
   margin: 2rem auto;
@@ -119,9 +109,9 @@ form button {
   overflow: hidden;
 }
 
-/* フッター */
+/* 8. フッター */
 footer {
-  background-color: var(--color-secondary);
+  background-color: var(--color-white);
   color: var(--color-text);
   text-align: center;
   padding: 2rem 1rem;
