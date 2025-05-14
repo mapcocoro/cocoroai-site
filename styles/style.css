@@ -9,4 +9,75 @@ body {
     font-size: 2.5rem;
     text-align: center;
   }
-  
+  /* 共通リセットやフォント設定 */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f9f2f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+  background: #fff;
+  padding: 1rem;
+}
+header nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+/* ヒーロー */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: #fde2e4;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.btn {
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  background: #a2d2ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: .5rem;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #fff;
+  font-size: .9rem;
+}
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+.service-list li {
+  margin-bottom: 2rem;
+}
+form input, form textarea {
+  width: 100%;
+  padding: .5rem;
+  margin-top: .5rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+}
+form button {
+  margin-top: 1rem;
+  padding: .75rem 1.5rem;
+  background: #a2d2ff;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+}
