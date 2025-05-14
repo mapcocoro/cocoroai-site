@@ -2,11 +2,11 @@
 
 /* 1. カラーパレット */
 :root {
-  --color-primary:       #F7B5CA;  /* ヒーロー背景 / リンク */
-  --color-accent:        #A3E8DD;  /* ボタンアクセント */
+  --color-primary:       #E6B2BA;  /* ヒーロー背景 / リンク */
+  --color-accent:        #2DAA9E;  /* ボタンアクセント */
   --color-neutral-light: #F9F2F4;  /* ページ背景 */
-  --color-white:         #FFFFFF;  /* 白 */
-  --color-text:          #333333;  /* 本文テキスト */
+  --color-white:         #F2F6D0;  /* クリーム */
+  --color-text:          #443627;  /* 本文テキスト */
 }
 
 /* 2. リセット & ベース */
