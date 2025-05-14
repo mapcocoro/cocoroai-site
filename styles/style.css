@@ -1,39 +1,58 @@
-body {
-    font-family: sans-serif;
-    padding: 2rem;
-    background: #f9f2f4;
-    color: #333;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  /* 共通リセットやフォント設定 */
-body {
+/* styles/style.css */
+
+:root {
+  /* ブランドカラー定義 */
+  --color-bg-light: #f9f2f4;
+  --color-primary: #E8A0BF;   /* ピンク */
+  --color-secondary: #F4F8D3; /* レモンイエロー */
+  --color-accent: #A3E8DD;    /* ミントグリーン */
+  --color-text: #333333;      /* チャコールグレー */
+  --color-white: #FFFFFF;
+}
+
+/* 共通リセット & ベース */
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+body {
   font-family: sans-serif;
-  background: #f9f2f4;
-  color: #333;
+  background-color: var(--color-bg-light);
+  color: var(--color-text);
   line-height: 1.6;
+  padding: 2rem;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
 }
 
 /* ヘッダー */
 header {
-  background: #fff;
+  background-color: var(--color-white);
   padding: 1rem;
 }
 header nav a {
   margin-right: 1rem;
-  text-decoration: none;
-  color: #333;
+  color: var(--color-text);
+  font-weight: normal;
+}
+header nav a.active,
+header nav a:hover {
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-primary);
 }
 
-/* ヒーロー */
+/* ヒーローセクション */
 .hero {
   text-align: center;
   padding: 4rem 1rem;
-  background: #fde2e4;
+  background-color: var(--color-primary);
+  color: var(--color-text);
 }
 .hero h1 {
   font-size: 2.5rem;
@@ -41,51 +60,58 @@ header nav a {
 }
 .btn {
   display: inline-block;
-  padding: .75rem 1.5rem;
-  background: #a2d2ff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: .5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-radius: 0.5rem;
+  transition: opacity 0.2s;
+}
+.btn:hover {
+  opacity: 0.9;
 }
 
-/* フッター */
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: #fff;
-  font-size: .9rem;
-}
-nav a.active {
-  font-weight: bold;
-  border-bottom: 2px solid #333;
-}
+/* サービスリスト */
 .service-list {
   list-style: none;
   padding: 0;
+  margin: 2rem 0;
 }
 .service-list li {
   margin-bottom: 2rem;
 }
-form input, form textarea {
+
+/* フォーム */
+form input,
+form textarea {
   width: 100%;
-  padding: .5rem;
-  margin-top: .5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
   border: 1px solid #ccc;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 form button {
   margin-top: 1rem;
-  padding: .75rem 1.5rem;
-  background: #a2d2ff;
-  color: #fff;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-white);
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
-/* styles/style.css の末尾などに追加 */
+
+/* Google フォーム埋め込み */
 .form-wrapper {
   max-width: 800px;
   margin: 2rem auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
+}
+
+/* フッター */
+footer {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
 }
