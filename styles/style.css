@@ -2,7 +2,7 @@
 
 /* 1. カラーパレット */
 :root {
-  --color-primary:       #E6B2BA;  /* ヒーロー背景 / リンク */
+  --color-primary:       #F7CFD8;  /* ヒーロー背景 / リンク */
   --color-accent:        #2DAA9E;  /* ボタンアクセント */
   --color-neutral-light: #F9F2F4;  /* ページ背景 */
   --color-white:         #f0eee5;  /* ベージュ */
