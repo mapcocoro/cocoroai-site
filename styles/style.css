@@ -2,14 +2,14 @@
 
 /* 1. カラーパレット */
 :root {
-  --color-primary:       #F7CFD8;  /* ヒーロー背景 / リンク */
+  --color-primary:       #FAD0C4;  /* ヒーロー背景 / リンク */
   --color-accent:        #2DAA9E;  /* ボタンアクセント */
   --color-neutral-light: #F9F2F4;  /* ページ背景 */
   --color-white:         #f0eee5;  /* ベージュ */
   --color-text:          #443627;  /* 本文テキスト */
 }
 
-/* 2. リセット */
+/* 2. リセット *#
 * {
   box-sizing: border-box;
   margin: 0;
