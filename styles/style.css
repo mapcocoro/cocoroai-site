@@ -237,3 +237,27 @@ footer {
   padding: 2rem 1rem;
   font-size: 0.9rem;
 }
+/* styles/style.css の末尾に入れてください */
+
+/* ＝レスポンシブiframeラッパー＝ */
+.form-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;       /* 任意。PC時の最大幅 */
+  margin: 2rem auto;
+  /* アスペクト比を固定したい場合は padding-bottom を使います（例は1:1.2） */
+  padding-bottom: 120%;   
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* iframe をラッパーいっぱいに広げる */
+.form-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+}
