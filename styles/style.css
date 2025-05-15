@@ -261,3 +261,15 @@ footer {
   height: 100% !important;
   border: 0;
 }
+
+/* リンク全体をボタンアクセントカラーに */
+a {
+  color: #2DAA9E;
+  text-decoration: none; /* 下線を消したい場合 */
+}
+
+/* ホバー時に少し濃くしたい場合（お好みで） */
+a:hover {
+  color: #248d87;
+  text-decoration: underline;
+}
